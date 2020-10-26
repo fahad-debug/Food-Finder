@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <div class="Bigcontainer">
+    <div class="container">
+               
+        <h1>BacklockList</h1>
+                   <ul class="drag-item-list" id="blocklist" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(0)">
+               
+                  </ul>
+
+
+                   <div class="add-btn-group">
+                    <button class=addBTn onclick="showInputBox(0)">+ Add Item</button>
+                    <div class="textContainer cache">
+                    <button class="saveBtn" onclick="hideInputBox(0)">Save Item</button>
+                    <div class="add-item" contenteditable=""></div>
+                </div>
+                    </div>
+                  </div>
+            
+                    <div class="container">
+                   <h1>ProgressList</h1>
+                   <ul class="drag-item-list" id="progresslist" ondrop="drop(event)" ondragover="allowDrop(event)"ondragenter="dragEnter(1)"></ul>
+
+                   <div class="add-btn-group">
+                    <button class=addBTn onclick="showInputBox(1)">+Add Item</button>
+                    <div class="textContainer cache">
+                    <button class="saveBtn" onclick="hideInputBox(1)">Save Item</button>
+                    <div class="add-item" contenteditable=""></div>
+                    </div>
+                    </div>
+                </div>
+            
+            
+
+                <div class="container">
+                   <h1>CompleteList</h1>
+
+                   <ul class="drag-item-list" id="completelist" ondrop="drop(event)" ondragover="allowDrop(event)"ondragenter="dragEnter(2)"></ul>
+
+                   <div class="add-btn-group">
+                    <button class=addBTn onclick="showInputBox(2)">+ Add Item</button>
+                    <div class="textContainer cache">
+                    <button class="saveBtn" onclick="hideInputBox(2)">Save Item</button>
+                    <div class="add-item" contenteditable=""></div>
+                    </div>
+                    </div>
+                </div>
+              
+
+                    <div class="container"> 
+                   <h1>onHoldList</h1>
+
+                   <ul class="drag-item-list" id="onholdlist"
+                    ondrop="drop(event)" ondragover="allowDrop(event)  "ondragenter="dragEnter(3)">
+
+                          
+                </ul>
+            
+                <div class="add-btn-group">
+                <button class=addBTn onclick="showInputBox(3)">+ Add Item</button>
+                <div class="textContainer cache">
+                <button class="saveBtn" onclick="hideInputBox(3)">Save Item</button>
+                <div class="add-item" contenteditable="true"></div>
+                </div>
+                </div>
+
+                        </div>
+            </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
